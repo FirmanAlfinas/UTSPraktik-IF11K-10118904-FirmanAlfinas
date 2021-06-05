@@ -10,6 +10,13 @@ class Isi : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.isi)
+        if (intent.extras != null) {
+            val data = intent.extras!!.getStringArray("data")
+            isiNik.setText(data?.get(0)).toString()
+            isiNama.setText(data?.get(1)).toString()
+            isiTglLahir.setText(data?.get(2)).toString()
+
+        }
         btnSimpan.setOnClickListener() {
             intent = Intent(this, Berhasil::class.java);
             startActivity(intent)
