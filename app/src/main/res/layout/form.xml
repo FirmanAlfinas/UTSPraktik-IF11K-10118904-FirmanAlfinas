@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="413dp"
+        android:layout_height="396dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Form Pengisian Data"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="328dp"
+                android:layout_height="94dp"
+                android:background="@drawable/primary_rounded2"
+                android:paddingLeft="16dp"
+                android:paddingTop="9dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="9dp"
+                android:text="form berikut ini bertujuan untuk memberikan informasi kepada pusat agar dapat mudah dilaporkan"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:text="NIK"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/textNik"
+                android:layout_width="328dp"
+                android:layout_height="40dp"
+                android:paddingBottom="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:text="Nama" />
+            <EditText
+                android:id="@+id/textNama"
+                android:layout_width="328dp"
+                android:layout_height="40dp"
+                android:paddingBottom="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:text="Tanggal Lahir" />
+            <EditText
+                android:id="@+id/textTglLahir"
+                android:layout_width="328dp"
+                android:layout_height="40dp"
+                android:paddingBottom="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="328dp"
+        android:layout_height="37dp"
+        android:background="@drawable/primary_rounded"
+        android:paddingLeft="70dp"
+        android:paddingTop="9dp"
+        android:paddingRight="70dp"
+        android:paddingBottom="9dp"
+        android:text="Selanjutnya"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RelativeLayout"
+        app:layout_constraintVertical_bias="0.84" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
